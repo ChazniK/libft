@@ -26,7 +26,8 @@ SRC3 =	ft_strcmp.c ft_strncmp.c ft_memalloc.c ft_memdel.c \
 		ft_striteri.c ft_strmap.c ft_strmapi.c ft_strequ.c \
 		ft_strnequ.c ft_strtrim.c ft_putendl.c ft_putchar_fd.c
 SRC4 = 	ft_putnbr_fd.c ft_putnbr.c ft_putstr_fd.c ft_putendl_fd.c \
-		ft_strjoin.c ft_strsub.c
+		ft_strjoin.c ft_strsub.c ft_strsplit.c ft_itoa.c \
+		ft_wordc.c ft_wordcount.c ft_charcount.c
 
 SRC = $(SRC1) $(SRC2) $(SRC3) $(SRC4)
 
