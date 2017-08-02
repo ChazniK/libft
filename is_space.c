@@ -1,34 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   is_space.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ckatz <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/06/22 15:19:39 by ckatz             #+#    #+#             */
-/*   Updated: 2017/08/02 16:42:34 by ckatz            ###   ########.fr       */
+/*   Created: 2017/08/02 14:27:49 by ckatz             #+#    #+#             */
+/*   Updated: 2017/08/02 14:30:29 by ckatz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr(int n)
+int		is_space(char c)
 {
-	long int	nbr;
-
-	nbr = n;
-	if (nbr < 0)
-	{
-		ft_putchar('-');
-		nbr = nbr * (-1);
-	}
-	if (nbr >= 10)
-	{
-		ft_putnbr(nbr / 10);
-		ft_putnbr(nbr % 10);
-	}
-	else
-	{
-		ft_putchar(nbr + '0');
-	}
+	if ((c == 32) || (c >= 9 && c <= 13))
+		return (1);
+	return (0);
 }
