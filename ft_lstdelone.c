@@ -6,13 +6,13 @@
 /*   By: ckatz <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/28 15:48:20 by ckatz             #+#    #+#             */
-/*   Updated: 2017/08/02 14:39:52 by ckatz            ###   ########.fr       */
+/*   Updated: 2017/08/03 11:40:54 by ckatz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstdelone(t_list **alst, void (*del)(void*, size_t))
+void	ft_lstdelone(t_list **alst, void (*del)(void*, size_t))
 {
 	t_list	*list;
 
