@@ -6,7 +6,7 @@
 /*   By: ckatz <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/02 16:14:48 by ckatz             #+#    #+#             */
-/*   Updated: 2017/08/03 12:02:35 by ckatz            ###   ########.fr       */
+/*   Updated: 2017/08/07 14:12:46 by ckatz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
-	t_list	*temp;
+	t_list *temp;
 
 	temp = lst;
-	while (temp != NULL)
+	while (temp)
 	{
-		(*f)(temp->content);
+		(f)(temp);
 		temp = temp->next;
 	}
 }

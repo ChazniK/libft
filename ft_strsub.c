@@ -6,7 +6,7 @@
 /*   By: ckatz <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/09 16:06:03 by ckatz             #+#    #+#             */
-/*   Updated: 2017/06/11 17:33:06 by ckatz            ###   ########.fr       */
+/*   Updated: 2017/08/07 18:20:00 by ckatz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,9 @@
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
 	size_t	j;
-	size_t	str_len;
 	char	*sub_str;
 
-	str_len = (size_t)ft_strlen(s);
 	if (!s)
-		return (NULL);
-	if (start > str_len)
 		return (NULL);
 	sub_str = ft_strnew(len);
 	if (!sub_str)
