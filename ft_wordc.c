@@ -6,7 +6,7 @@
 /*   By: ckatz <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/22 15:27:54 by ckatz             #+#    #+#             */
-/*   Updated: 2017/06/22 15:42:04 by ckatz            ###   ########.fr       */
+/*   Updated: 2017/08/18 10:20:44 by ckatz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ int	ft_wordc(char const *str, char c)
 
 	i = 0;
 	cnt = 0;
-	while (str[i] && str[i] == c)
-		i++;
 	while (str[i])
 	{
 		while (str[i] && str[i] == c)
